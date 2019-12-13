@@ -1,37 +1,39 @@
 {
-  "name": "api-backend",
-  "version": "1.0.0",
-  "description": "An api backend",
-  "main": "index.js",
-  "scripts": {
-    "start": "node api/app.js",
-    "dev": "nodemon -r dotenv/config api/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd client && npm install && npm run build"
-  },
-  "author": "Edgardo Molina",
-  "license": "ISC",
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
-    "morgan": "^1.9.1",
-    "pg": "^7.12.1",
-    "pg-hstore": "^2.3.3",
-    "popper.js": "^1.16.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-icons": "^3.8.0",
-    "sequelize": "^5.19.2",
-    "sqlite3": "^4.1.0"
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.1.2",
+    "reactstrap": "^8.1.1",
+    "scandit-sdk": "^4.6.1",
+    "scandit-sdk-react": "^1.0.3"
   },
-  "devDependencies": {
-    "dotenv": "^8.1.0",
-    "nodemon": "^1.19.3",
-    "sequelize-cli": "^5.5.1"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "nodemonConfig": {
-    "ignore": [
-      "client/"
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:8080"
 }
