@@ -82,7 +82,7 @@ class Landing extends React.Component {
   }
 
   getScanSettings = () => {
-    return new ScanSettings({ enabledSymbologies: [Barcode.Symbology.EAN13, Barcode.Symbology.EAN8] });
+    return new ScanSettings({ enabledSymbologies: [Barcode.Symbology.EAN13, Barcode.Symbology.EAN8, Barcode.Symbology.UPCA, Barcode.Symbology.UPCE] });
   };
 
 
