@@ -5,6 +5,7 @@
     background-color: #d1e0db;
     border-radius: 3px;
     border: 1px solid gray;
+    cursor: pointer;
 }
 
 /* .result-item .food-img {
